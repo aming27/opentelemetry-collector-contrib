@@ -28,7 +28,7 @@ func parseConnectionString(exporterConfig *Config) (*ConnectionVars, error) {
 	connectionVars := &ConnectionVars{}
 
 	if connectionString == "" && instrumentationKey == "" {
-		return nil, fmt.Errorf("ConnectionString and InstrumentationKey cannot be empty")
+		return nil, fmt.Errorf("ConnectionString and InstrumentationKey cannot be empty. TEST LOCAL")
 	}
 	if len(connectionString) > ConnectionStringMaxLength {
 		return nil, fmt.Errorf("ConnectionString exceeds maximum length of %d characters", ConnectionStringMaxLength)
