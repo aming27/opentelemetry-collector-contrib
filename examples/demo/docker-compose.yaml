@@ -21,7 +21,7 @@ services:
 
   # Collector
   otel-collector:
-    image: ${OTELCOL_IMG}
+    image: otelcontribcol #${OTELCOL_IMG}
     restart: always
     command: ["--config=/etc/otel-collector-config.yaml", "${OTELCOL_ARGS}"]
     volumes:
